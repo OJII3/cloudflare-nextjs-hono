@@ -14,5 +14,5 @@ export default function Home() {
 
 	if (isLoading) return <div>Loading...</div>;
 	if (error || !data) return <div>Error: {error || "no data"}</div>;
-	return <div>API status: {data.statusText}</div>;
+	return <div>API status: {data.statusText.toString()}</div>;
 }
